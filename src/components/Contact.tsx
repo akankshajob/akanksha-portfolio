@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import { createClient } from '@supabase/supabase-js';
 import { supabase } from '../supabaseClient';
 
 const Contact: React.FC = () => {
@@ -12,8 +11,6 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [successMessage, setSuccessMessage] = useState('');
-  
-  const supabase = createClient('https://yvsaevbrsnfrllhulzvb.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl2c2FldmJyc25mcmxsaHVsenZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzg3NjgsImV4cCI6MjA2NzcxNDc2OH0.vZBN8Rj4dIGeKg5dFn2tBIZgz1e60tPYF3rEIxDIaE4')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
