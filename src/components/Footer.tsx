@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
             className="text-2xl font-bold gradient-text mb-6"
           >
-            YourName
+            Akanksha Job
           </motion.div>
 
           {/* Social Links */}

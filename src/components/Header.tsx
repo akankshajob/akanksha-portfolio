@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleTheme }) => {
             whileHover={{ scale: 1.05 }}
             className="text-2xl font-bold gradient-text"
           >
-            YourName
+            AJ
           </motion.div>
 
           {/* Desktop Navigation */}

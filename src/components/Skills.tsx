@@ -20,8 +20,7 @@ const Skills: React.FC = () => {
       title: 'Backend & Database',
       icon: <Database size={24} />,
       skills: [
-        { name: 'Node.js', level: 80 },
-        { name: 'Express.js', level: 75 },
+
         { name: 'Python', level: 85 },
         { name: 'Django', level: 78 },
         { name: 'MongoDB', level: 80 },
@@ -33,7 +32,7 @@ const Skills: React.FC = () => {
       icon: <Cloud size={24} />,
       skills: [
         { name: 'GCP', level: 70 },
-        { name: 'AWS (Free Tier)', level: 65 },
+        { name: 'AWS', level: 30 },
         { name: 'Docker', level: 60 },
         { name: 'Git/GitHub', level: 90 },
         { name: 'CI/CD Basics', level: 65 },
@@ -55,7 +54,6 @@ const Skills: React.FC = () => {
         { name: 'REST APIs', level: 85 },
         { name: 'Render', level: 80 },
         { name: 'Firebase', level: 70 },
-        { name: 'Netlify', level: 75 },
         { name: 'Postman', level: 85 },
       ]
     }
