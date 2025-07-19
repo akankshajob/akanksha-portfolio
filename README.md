@@ -1,4 +1,4 @@
-# [Your Name] - Portfolio
+# Akanksha Job- Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Supabase. Features a secure contact form, smooth animations, and a professional design.
 
