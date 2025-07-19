@@ -46,7 +46,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding">
+    <section id="experience" className="section-padding bg-transparent">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,13 +80,13 @@ const Experience: React.FC = () => {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white dark:border-dark-900 shadow-lg z-10"></div>
+                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-beige-400 rounded-full border-4 border-white dark:border-dark-900 shadow-lg z-10"></div>
 
                 {/* Content Card */}
                 <div className={`ml-12 md:ml-0 md:w-5/12 ${
                   index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
                 }`}>
-                  <div className="bg-white dark:bg-dark-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="bg-transparent rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
                     {/* Header */}
                     <div className="flex items-start justify-between mb-4">
                       <div>
@@ -164,7 +164,7 @@ const Experience: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-beige-400 hover:bg-beige-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <ExternalLink size={20} />
             Download Full Resume

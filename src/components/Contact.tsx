@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, } from 'lucide-react';
 import { supabase } from '../supabaseClient';
 
 const Contact: React.FC = () => {
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin size={24} />,
       title: 'Location',
-      value: 'Pune – Akurdi & Ravet',
+      value: 'Pune',
       href: '#'
     }
   ];
@@ -51,11 +51,10 @@ const Contact: React.FC = () => {
   const socialLinks = [
     { icon: <Github size={20} />, href: 'https://github.com/yourusername', label: 'GitHub' },
     { icon: <Linkedin size={20} />, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, href: 'https://twitter.com/yourusername', label: 'Twitter' }
   ];
 
   return (
-    <section id="contact" className="section-padding bg-gray-50 dark:bg-dark-800">
+    <section id="contact" className="section-padding bg-transparent">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -98,9 +97,9 @@ const Contact: React.FC = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-dark-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group"
+                  className="flex items-center gap-4 p-4 bg-transparent rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group"
                 >
-                  <div className="text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform duration-200">
+                  <div className="text-beige-700 dark:text-beige-400 group-hover:scale-110 transition-transform duration-200">
                     {info.icon}
                   </div>
                   <div>
@@ -219,7 +218,7 @@ const Contact: React.FC = () => {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+                className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-beige-400 hover:bg-beige-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
                 <Send size={20} />
                 Send Message

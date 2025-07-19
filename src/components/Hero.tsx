@@ -14,57 +14,37 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-blue-50 dark:from-dark-800 dark:to-dark-900"></div>
-      <div className="absolute inset-0 opacity-50" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230ea5e9' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-      }}></div>
-
-      <div className="container-max section-padding relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          {/* Greeting */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-lg text-primary-600 dark:text-primary-400 font-medium mb-4"
-          >
-            Hello, I'm
-          </motion.div>
-
-          {/* Name */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
-          >
-            <span className="gradient-text">{name}</span>
-          </motion.h1>
-
-          {/* Title */}
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-8"
-          >
-            {headline}
-          </motion.h2>
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
-          >
-            {tagline}
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent">
+      <div className="container-max section-padding relative z-10 flex flex-col items-center justify-center text-center">
+        {/* Main Title: User's Name Only */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-6xl sm:text-7xl lg:text-8xl font-extrabold text-white mb-6"
+        >
+          Akanksha Job
+        </motion.h1>
+        {/* Subtitle */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mb-8"
+        >
+          {headline}
+        </motion.h2>
+        {/* Tagline */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="text-lg sm:text-xl text-gray-200 mb-12 max-w-2xl mx-auto leading-relaxed"
+        >
+          {tagline}
+        </motion.p>
+        {/* CTA Buttons (optional) */}
+        <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -74,7 +54,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection('#contact')}
-              className="flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+              className="flex items-center gap-2 px-8 py-4 bg-beige-400 hover:bg-beige-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               <Mail size={20} />
               Get In Touch
@@ -85,7 +65,7 @@ const Hero: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               href="/resume.pdf" // Replace with actual path to your CV
               download
-              className="flex items-center gap-2 px-8 py-4 border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-600 hover:text-white font-semibold rounded-lg transition-all duration-200"
+              className="flex items-center gap-2 px-8 py-4 border-2 border-beige-400 text-beige-700 dark:text-beige-400 hover:bg-beige-400 hover:text-gray-900 font-semibold rounded-lg transition-all duration-200"
             >
               <Download size={20} />
               Download CV
@@ -108,7 +88,6 @@ const Hero: React.FC = () => {
               <ChevronDown size={24} className="text-gray-600 dark:text-gray-400" />
             </motion.button>
           </motion.div>
-        </div>
       </div>
     </section>
   );

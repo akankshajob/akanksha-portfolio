@@ -8,6 +8,9 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import DominoBackground from './components/DominoBackground';
+import DominoBackground3D from './components/DominoBackground3D';
+import DarkVeil from './components/DarkVeil';
 
 /**
  * ---------------------------------------------------------
@@ -155,11 +158,24 @@ function App() {
   const toggleTheme = () => setDarkMode((prev) => !prev);
 
   return (
-    <PortfolioContext.Provider value={portfolioData}>
-      <div className="min-h-screen bg-white dark:bg-dark-900 text-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans">
+    <div style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
+      {/* DarkVeil background */}
+      <div style={{ width: '100vw', height: '100vh', position: 'fixed', inset: 0, zIndex: 0 }}>
+        <DarkVeil noiseIntensity={0.2} scanlineIntensity={0.2} warpAmount={0.1} />
+      </div>
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          width: '100%',
+          minHeight: '100vh',
+          background: 'transparent',
+          color: '#fff',
+          overflowX: 'hidden',
+        }}
+      >
         <Header darkMode={darkMode} toggleTheme={toggleTheme} />
         <main>
-          {/* Sections consume context internally */}
           <Hero />
           <About />
           <Skills />
@@ -169,7 +185,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </PortfolioContext.Provider>
+    </div>
   );
 }
 

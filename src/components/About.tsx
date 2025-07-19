@@ -19,7 +19,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="section-padding bg-gray-50 dark:bg-dark-800">
+    <section id="about" className="section-padding bg-transparent">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ const About: React.FC = () => {
           >
             {/* Profile Image */}
             <div className="relative">
-              <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-primary-400 to-blue-600 p-1">
+              <div className="w-80 h-80 mx-auto rounded-full bg-gradient-to-br from-beige-300 to-gray-400 p-1">
                 <div className="w-full h-full rounded-full bg-gray-200 dark:bg-dark-700 flex items-center justify-center">
                   <User size={120} className="text-gray-400 dark:text-gray-500" />
                 </div>
@@ -55,12 +55,12 @@ const About: React.FC = () => {
             </div>
 
             {/* Personal Info */}
-            <div className="bg-white dark:bg-dark-900 rounded-xl p-6 shadow-lg">
+            <div className="bg-transparent rounded-xl p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Personal Information</h3>
               <div className="space-y-3">
                 {personalInfo.map((info, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <div className="text-primary-600 dark:text-primary-400">
+                    <div className="text-beige-700 dark:text-beige-400">
                       {info.icon}
                     </div>
                     <span className="text-gray-600 dark:text-gray-400 font-medium">
@@ -101,7 +101,7 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-white dark:bg-dark-900 rounded-xl p-8 shadow-lg">
+            <div className="bg-transparent rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-6">My Story</h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
                 <p>{about}</p>
@@ -110,16 +110,16 @@ const About: React.FC = () => {
 
             {/* Key Highlights */}
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-white dark:bg-dark-900 rounded-xl p-6 shadow-lg text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">
+              <div className="bg-transparent rounded-xl p-6 shadow-lg text-center">
+                <div className="text-3xl font-bold text-beige-700 dark:text-beige-400 mb-2">
                   3+
                 </div>
                 <div className="text-gray-600 dark:text-gray-400">
                   Cloud Projects
                 </div>
               </div>
-              <div className="bg-white dark:bg-dark-900 rounded-xl p-6 shadow-lg text-center">
-                <div className="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2">
+              <div className="bg-transparent rounded-xl p-6 shadow-lg text-center">
+                <div className="text-3xl font-bold text-beige-700 dark:text-beige-400 mb-2">
                   5+
                 </div>
                 <div className="text-gray-600 dark:text-gray-400">

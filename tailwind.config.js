@@ -28,9 +28,16 @@ module.exports = {
           500: '#64748b',
           600: '#475569',
           700: '#334155',
-          800: '#1e293b',
-          900: '#0f172a',
-        }
+          800: '#181818', // pure near-black
+          900: '#000000', // pure black
+        },
+        beige: {
+          100: '#f5f5dc',
+          300: '#e5dec7',
+          400: '#e5d8b0',
+          500: '#d6c7a1',
+          700: '#b8a97a',
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

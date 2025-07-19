@@ -60,7 +60,7 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="section-padding">
+    <section id="skills" className="section-padding bg-transparent">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ const Skills: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-dark-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-transparent rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="text-primary-600 dark:text-primary-400">
@@ -101,7 +101,7 @@ const Skills: React.FC = () => {
                       <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-primary-600 dark:text-primary-400 font-semibold">
+                      <span className="text-sm text-beige-700 dark:text-beige-400 font-semibold">
                         {skill.level}%
                       </span>
                     </div>
@@ -111,7 +111,7 @@ const Skills: React.FC = () => {
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: skillIndex * 0.1 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-r from-primary-500 to-blue-500 h-2 rounded-full"
+                        className="bg-gradient-to-r from-beige-300 to-gray-400 h-2 rounded-full"
                       />
                     </div>
                   </div>

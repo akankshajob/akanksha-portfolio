@@ -53,7 +53,7 @@ const Projects: React.FC = () => {
       : enrichedProjects.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-dark-800">
+    <section id="projects" className="section-padding bg-transparent">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -84,8 +84,8 @@ const Projects: React.FC = () => {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
                 activeFilter === filter.id
-                  ? 'bg-primary-600 text-white shadow-lg'
-                  : 'bg-white dark:bg-dark-900 text-gray-700 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-dark-700'
+                  ? 'bg-beige-400 text-gray-900 shadow-lg'
+                  : 'bg-white dark:bg-dark-900 text-gray-700 dark:text-gray-300 hover:bg-beige-100 dark:hover:bg-dark-700'
               }`}
             >
               {filter.label}
@@ -102,10 +102,10 @@ const Projects: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-dark-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-transparent rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               {/* Cover */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-blue-100 dark:from-dark-700 dark:to-dark-600 flex items-center justify-center">
+              <div className="relative h-48 bg-transparent flex items-center justify-center">
                 <div className="text-6xl text-primary-300 dark:text-primary-600">
                   {categoryIcon(project.category)}
                 </div>
@@ -146,7 +146,7 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors duration-200"
+                      className="flex items-center gap-2 px-4 py-2 bg-beige-400 hover:bg-beige-500 text-gray-900 rounded-lg transition-colors duration-200"
                     >
                       <Eye size={16} />
                       Live
@@ -185,7 +185,7 @@ const Projects: React.FC = () => {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-beige-400 hover:bg-beige-500 text-gray-900 font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <Github size={20} />
             View More on GitHub
