@@ -52,16 +52,6 @@ A modern, responsive portfolio website built with React, TypeScript, Tailwind CS
 - Deploy easily to Vercel, Netlify, or any static hosting provider
 - Remember to set your environment variables in your deployment platform
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📞 Contact
-
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/yourusername)
-- **GitHub:** [Your GitHub](https://github.com/yourusername)
-
 ---
 
 Made with ❤️ by [Akanksha Job]
