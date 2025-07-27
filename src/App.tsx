@@ -77,7 +77,7 @@ export const portfolioData: PortfolioData = {
     'JavaScript',
     'React',
     'Git & GitHub',
-    'Android (Kotlin)',
+    'Android (Java)',
   ],
 
   /** PROJECTS */
@@ -120,9 +120,9 @@ export const portfolioData: PortfolioData = {
 
   /** CONTACT */
   socials: {
-    email: 'akanksha.job@example.com',
-    linkedIn: 'https://linkedin.com/in/akanksha‑job',
-    github: 'https://github.com/akanksha‑job',
+    email: 'akankshajob7@gmail.com',
+    linkedIn: 'https://linkedin.com/in/akanksha-job-992a34251',
+    github: 'https://github.com/akankshajob',
   },
 };
 
