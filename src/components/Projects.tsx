@@ -13,7 +13,7 @@ interface CategoryFilter {
  * If you add an explicit `category` in portfolioData later, you can replace this.
  */
 const deriveCategory = (tech: string[]): string => {
-  if (tech.some((t) => ['React Native', 'Expo'].includes(t))) return 'mobile';
+  
   if (tech.some((t) => ['FastAPI', 'Python', 'LLMs'].includes(t))) return 'ai';
   if (tech.some((t) => ['Node.js', 'Express', 'Django'].includes(t))) return 'fullstack';
   return 'web';
@@ -23,8 +23,6 @@ const categoryIcon = (category: string) => {
   switch (category) {
     case 'ai':
       return <Globe size={20} />;
-    case 'mobile':
-      return <Smartphone size={20} />;
     case 'fullstack':
       return <Code size={20} />;
     default:
@@ -42,7 +40,7 @@ const Projects: React.FC = () => {
     { id: 'all', label: 'All Projects' },
     { id: 'fullstack', label: 'Full Stack' },
     { id: 'ai', label: 'AI / ML' },
-    { id: 'mobile', label: 'Mobile' },
+    
   ];
 
   const [activeFilter, setActiveFilter] = useState<string>('all');
@@ -66,7 +64,7 @@ const Projects: React.FC = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A snapshot of the work I’m proudest of — spanning AI, full‑stack web, and mobile.
+            A snapshot of the work I’m proudest of — spanning AI, full‑stack web.
           </p>
         </motion.div>
 
@@ -180,7 +178,7 @@ const Projects: React.FC = () => {
           className="text-center mt-12"
         >
           <motion.a
-            href="https://github.com/akanksha-job"
+            href="https://github.com/akankshajob"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
