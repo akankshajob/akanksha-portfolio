@@ -83,26 +83,26 @@ export const portfolioData: PortfolioData = {
   /** PROJECTS */
   projects: [
     {
-      title: 'Wellness Coach AI',
+      title: 'Fit-Track - BuddyBliss',
       tech: ['Python', 'LLMs', 'FastAPI', 'PostgreSQL'],
       description:
         'AI‑powered coach recommending personalised mental & physical wellness routines using LLMs and vector search.',
-      repoUrl: 'https://github.com/akanksha‑job/wellness‑coach‑ai',
+      repoUrl: 'https://github.com/akankshajob/Fit-Track',
       liveUrl: '',
     },
     {
-      title: 'Code Bridge – User Registration',
-      tech: ['Django', 'MongoDB'],
+      title: 'Code Bridge – Real-Time Collaborative Coding',
+      tech: ['React', 'Node.js', 'Express.js', 'Socket.IO', 'MongoDB'],
       description:
-        'Robust authentication & authorisation module connecting user sign‑ups to MongoDB with JWT‑based sessions.',
-      repoUrl: 'https://github.com/akanksha‑job/code‑bridge‑auth',
+        'A real-time collaborative coding platform that allows multiple users to write and edit code simultaneously with live updates, chat integration, and session sharing.',
+      repoUrl: 'https://github.com/akankshajob/codebridge',
     },
     {
-      title: 'LocalPal',
-      tech: ['React', 'Django', 'REST', 'Google Maps API'],
+      title: 'LocalPal – Explore Nearby Places Easily',
+      tech: ['Django', 'HTML5', 'CSS3', 'Bootstrap', 'SQLite','Google Maps API'],
       description:
-        'Community‑driven platform helping newcomers discover local facilities such as cafés, clinics, and attractions.',
-      repoUrl: 'https://github.com/akanksha‑job/localpal',
+        'A web-based community platform that helps users discover local cafes, accommodations, clinics, and attractions with category filters and user feedback.',
+      repoUrl: 'https://github.com/akankshajob/LocalPal',
     },
   ],
 
