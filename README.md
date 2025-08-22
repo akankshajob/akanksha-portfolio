@@ -7,7 +7,7 @@ A modern, responsive portfolio website built with React, TypeScript, Tailwind CS
 - **Modern Design:** Clean, professional layout with smooth animations
 - **Responsive:** Works on all devices
 - **Dark/Light Theme:** Toggle between dark and light modes
-- **Supabase Contact Form:** Secure, cloud-based message storage
+- **Supabase Contact Form:** Secure, cloud-based message 
 - **Fast Performance:** Optimized for speed
 - **Accessible:** WCAG compliant
 
